@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prj_Adopt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="headMin">
+        <div class="left">
+            The HelpBook | FAQs
+        </div>
+        <div class="right">
+            <a href="mailto:admin@helpbook">admin@helpbook.com</a>&nbsp;|&nbsp;
+            <a href="tel:+919999999999">999999999</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            Follow Us:&nbsp;
+            <span><a href="./"><i class="fa-brands fa-twitter"></i></a></span>&nbsp;-&nbsp;
+            <span><a href="./"><i class="fa-brands fa-facebook"></i></a></span>&nbsp;-&nbsp;
+            <span><a href="./"><i class="fa-brands fa-instagram"></i></a></span>&nbsp;-&nbsp;
+            <span><a href="./"><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div>
+    </div>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <img src="./assets/logo_low.jpg" alt="The HelpBook">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <a href="./">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./donate.html">Donate</a>
+                    <a href="./adoption.html">Adopt Pet</a>
+                    <a href="./join.html">Join</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="donate">
+                <a href="./" class="don"><i class="fa-solid fa-heart"></i>&nbsp;Donate Now</a>
+            </div>
+        </div>
+    </header>
+    <style>
+        
+
+        div.headMin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            z-index: 2;
+
+            a {
+                color: rgb(223, 223, 223);
+                text-decoration: none;
+            }
+
+
+            span a {
+                color: rgb(98, 98, 98);
+                font-size: 1.3rem;
+            }
+
+            span {
+                color: rgb(98, 98, 98);
+                padding: 0 4px;
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+            }
+
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 1rem 1.5rem -0.1rem #e6e6e6;
+            z-index: 9;
+
+            .left {
+                display: flex;
+                align-items: center;
+            }
+
+            .logo {
+                padding: 0 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+
+        .navbar {
+            color: rgb(231, 106, 106);
+            width: 100%;
+            display: inline-block;
+
+            a {
+                padding: 0 6px;
+                color: darkslategray;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: rgb(80, 0, 0);
+            }
+        }
+
+
+        .don {
+            transition: 0.4s ease-in-out;
+            padding: 8px 18px;
+            border-radius: 60px;
+            border: none;
+            background-color: rgb(70, 236, 167);
+            color: white;
+            font-weight: bold;
+            border: 0.5px solid rgb(169, 250, 216);
+        }
+
+        .don:hover {
+            transition: 0.4s ease-in-out;
+            border: 5px solid rgb(169, 250, 216);
+        }
+
+
+        .searchIco {
+            background-color: rgb(82, 82, 82);
+            margin: 0;
+            padding: 5px 10px;
+            padding-top: 6px;
+            border-radius: 70px 0 0 70px;
+        }
+    </style>
+
+
+
+<style>
+    
+
+    
+
+    .hero2 {
+      position: relative;
+      background-image: url('./assets/website-banner-happy-dog-puppy-600nw-531343426.webp');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero2 h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero2 p {
+      font-size: 1.2rem;
+    }
+
+    .containerPt {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 50px 0;
+    }
+
+    .filter-bar button {
+      transition: 0.2s ease-in-out;
+      background-color: rgb(39, 160, 110);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .filter-bar button:hover {
+      background-color: rgb(34, 142, 97);
+    }
+
+/* 
+    transition: 0.4s ease-in-out;
+            padding: 8px 18px;
+            border-radius: 60px;
+            border: none;
+            background-color: rgb(70, 236, 167);
+            color: white;
+            font-weight: bold;
+            border: 0.5px solid rgb(169, 250, 216); */
+
+
+
+    .pet-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .pet-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .pet-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pet-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .pet-card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .pet-card h3 {
+      font-size: 1.5rem;
+      color: rgb(70, 236, 167);
+      margin-bottom: 5px;
+    }
+
+    .pet-card p {
+      font-size: 1rem;
+      color: #666;
+      margin: 5px 0;
+    }
+
+    .pet-card .age, .pet-card .breed {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .pet-card .adopt-btn {
+            transition: 0.4s ease-in-out;
+            padding: 8px 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(39, 160, 110);
+            color: white;
+            font-weight: bold;
+            border: 0.5px solid rgb(169, 250, 216);
+    }
+
+    .pet-card .adopt-btn:hover {
+        background-color: rgb(43, 184, 125);
+    }
+
+    @media (max-width: 768px) {
+      .pet-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .pet-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+
+<section class="hero2">
+  <h2>Find Your New Best Friend</h2>
+  <p>Explore our wide range of animals looking for a loving home.</p>
+</section>
+
+<div class="containerPt">
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <button>All</button>
+    <button>Dogs</button>
+    <button>Cats</button>
+    <button>Rabbits</button>
+    <button>Other Animals</button>
+  </div>
+
+  <!-- Pet List -->
+  <div class="pet-list">
+
+    <!-- Pet Card 1 -->
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Dog">
+      <div class="pet-card-content">
+        <h3>Charlie</h3>
+        <p class="age">Age: 3 years</p>
+        <p class="breed">Breed: Golden Retriever</p>
+        <p>Friendly and loyal, loves to play fetch and is great with kids.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+    <!-- Pet Card 2 -->
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+    <!-- Pet Card 3 -->
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Rabbit">
+      <div class="pet-card-content">
+        <h3>Bunny</h3>
+        <p class="age">Age: 1 year</p>
+        <p class="breed">Breed: Dwarf Rabbit</p>
+        <p>Playful and gentle, enjoys treats and is easy to handle.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+    <!-- Add more pet cards here -->
+
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+
+    <div class="pet-card">
+      <img src="cat.jpg" alt="Cat">
+      <div class="pet-card-content">
+        <h3>Luna</h3>
+        <p class="age">Age: 2 years</p>
+        <p class="breed">Breed: Siamese</p>
+        <p>Curious and affectionate, loves attention and will curl up in your lap.</p>
+        <button class="adopt-btn">Adopt Me</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer>
+    <div class="logo">
+        <img src="./assets/logo_low_nobg.png" alt="Logo">
+    </div>
+    <div class="about">
+        <div class="heading">About</div>
+        <div class="sepraTwo"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fuga voluptate<br /> non sunt eveniet hic
+            delectus blanditiis ipsam sapiente exercitationem?
+        </p>
+
+    </div>
+    <div class="links">
+        <div class="heading">Useful Links</div>
+
+        <div class="sepraTwo"></div>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./">About</a></li>
+            <li><a href="./">Contact</a></li>
+            <li><a href="./">Donate</a></li>
+            <li><a href="./">Blood Donation</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <div class="heading">Contact Us</div>
+        <div class="sepraTwo"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, sint.</p>
+    </div>
+</footer>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    footer {
+        display: flex;
+        background-color: rgb(54, 50, 50);
+        color: white;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 90px;
+
+        .contact {
+            align-self: flex-start;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            transition: 0.2s;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+    }
+
+    .sepraTwo {
+        height: 1px;
+        width: 50px;
+        background-color: white;
+        margin: 4px 0;
+    }
+</style>
+
+<div class="foot">
+    &copy; Copyright All Right Reserved.
+</div>
+
+
+<script src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+
+</html>

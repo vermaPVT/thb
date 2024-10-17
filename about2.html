@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+      
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="headMin">
+        <div class="left">
+            The HelpBook | FAQs
+        </div>
+        <div class="right">
+            <a href="mailto:admin@helpbook">admin@helpbook.com</a> |
+            <a href="tel:+919999999999">999999999</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span class="searchIco"><i class="fas fa-search"></i></span>
+
+            <input type="text" name="search" id="search" placeholder="Search...">
+        </div>
+    </div>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <img src="./assets/logo_low.jpg" alt="The HelpBook">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <a href="./">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./donate.html">Donate</a>
+                    <a href="./adoption.html">Adopt Pet</a>
+                    <a href="./join.html">Join</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="donate">
+                <a href="./" class="don"><i class="fa-solid fa-heart"></i>&nbsp;Donate Now</a>
+            </div>
+        </div>
+    </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.headMin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            z-index: 2;
+
+            a {
+                color: rgb(223, 223, 223);
+                text-decoration: none;
+            }
+
+            #search {
+                cursor: pointer;
+                background-color: rgb(82, 82, 82);
+                outline: none;
+                border: none;
+                padding: 5px 10px;
+                color: rgb(209, 209, 209);
+                border-radius: 0 70px 70px 0;
+                margin-left: -10px;
+
+            }
+
+            #search:focus {
+                background-color: rgb(100, 100, 100);
+            }
+
+            #search::placeholder {
+                color: rgb(209, 209, 209)
+            }
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 .7rem -.1rem #e6e6e6;
+
+            .left {
+                display: flex;
+                align-items: center;
+            }
+
+            .logo {
+                padding: 0 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+
+        .navbar {
+            color: rgb(231, 106, 106);
+            width: 100%;
+            display: inline-block;
+
+            a {
+                padding: 0 6px;
+                color: darkslategray;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: rgb(80, 0, 0);
+            }
+        }
+
+
+        .don {
+            transition: 0.4s ease-in-out;
+            padding: 8px 18px;
+            border-radius: 60px;
+            border: none;
+            background-color: rgb(70, 236, 167);
+            color: white;
+            font-weight: bold;
+            border: 0.5px solid rgb(169, 250, 216);
+        }
+
+        .don:hover {
+            transition: 0.4s ease-in-out;
+            border: 5px solid rgb(169, 250, 216);
+        }
+
+
+        .searchIco {
+            background-color: rgb(82, 82, 82);
+            margin: 0;
+            padding: 5px 10px;
+            padding-top: 6px;
+            border-radius: 70px 0 0 70px;
+        }
+    </style>
+
+    <div class="hero">
+        <h2>Empowering Change, One Step at a Time</h2>
+        <p>At The Help Book Foundation, we strive to make a positive impact on our environment and communities through dedicated action and collaboration.</p>
+    </div>
+
+    <div class="wrapper">
+        <!-- What We Do Section -->
+        <section class="content">
+            <h2>What We Do</h2>
+            <p>We work to protect the environment by organizing clean-up drives and planting trees. Our aim is to reduce pollution and make the world greener for future generations. We encourage everyone to join us in taking care of our planet.</p>
+        </section>
+
+        <!-- Guiding Principles Section -->
+        <section class="content">
+            <h2>Guiding Principles</h2>
+            <p>We believe that small actions, like picking up trash and planting trees, can create big changes. By working together and being mindful of the environment, we can make a lasting positive impact on the Earth.</p>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h2>Our Achievements</h2>
+            <div class="achievement-item">
+                <img src="./assets/about1.png" alt="Achievement 1" class="achievement-image">
+                <div class="achievement-text">
+                    <h4>Cleaning Drives Across Cities</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante eu justo consectetur commodo ut at lorem. Phasellus gravida neque vel tortor tincidunt luctus.</p>
+                </div>
+            </div>
+
+            <div class="achievement-item">
+                <img src="./assets/about2.png" alt="Achievement 2" class="achievement-image">
+                <div class="achievement-text">
+                    <h4>Planting Thousands of Trees</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum eros a massa feugiat, et imperdiet risus bibendum. Etiam ultricies sit amet est in feugiat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Vision Section -->
+        <section class="our-vision">
+            <h2>Our Vision</h2>
+            <div class="vision-item">
+                <img src="./assets/about3.jpeg" alt="Vision Image 1" class="vision-image">
+                <div class="vision-text">
+                    <p>Our vision is to provide social services across India, inspiring youth to engage in meaningful work that improves communities. By empowering the next generation, we aim to build a better future for all, ensuring access to essential resources and opportunities for growth and development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="our-mission">
+            <h2>Our Mission</h2>
+            <div class="mission-item">
+                <img src="./assets/tree (4).jpeg" alt="Mission Image 1" class="mission-image">
+                <div class="mission-text">
+                    <p>Our mission is to foster a world where every individual has the opportunity to access quality education, where no one goes to bed hungry, and where the environment is preserved for future generations. Our mission is to create a society where these fundamental needs are met with dignity and sustainability, ensuring a better future for all.</p>
+                    <ul>
+                        <li><strong>Education and Skill Development:</strong> Ensuring access to quality education and vocational training.</li>
+                        <li><strong>Healthcare:</strong> Enhancing health through medical services and awareness programs.</li>
+                        <li><strong>Environment and Sustainability:</strong> Addressing environmental challenges and promoting conservation.</li>
+                        <li><strong>Animal Welfare:</strong> Rescuing, feeding, and caring for animals in need.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="btn">
+            <button id="bt">Join Us</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="logo">
+            <img src="./assets/logo_low_nobg.png" alt="Logo">
+        </div>
+        <div class="about">
+            <div class="heading">About</div>
+            <div class="sepraTwo"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fuga voluptate<br /> non sunt eveniet hic
+                delectus blanditiis ipsam sapiente exercitationem?
+            </p>
+
+        </div>
+        <div class="links">
+            <div class="heading">Useful Links</div>
+
+            <div class="sepraTwo"></div>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+                <li><a href="./">Donate</a></li>
+                <li><a href="./">Blood Donation</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="heading">Contact Us</div>
+            <div class="sepraTwo"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, sint.</p>
+        </div>
+    </footer>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            display: flex;
+            background-color: rgb(54, 50, 50);
+            color: white;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 90px;
+
+            .contact {
+                align-self: flex-start;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            a {
+                transition: 0.2s;
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+
+            }
+        }
+
+        .sepraTwo {
+            height: 1px;
+            width: 50px;
+            background-color: white;
+            margin: 4px 0;
+        }
+    </style>
+
+    <div class="foot">
+        &copy; Copyright All Right Reserved.
+    </div>
+
+<script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+</body>
+
+</html>

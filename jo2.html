@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    
+    <style>
+       
+
+        .wrapper {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #8e44ad;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        #submit-btn {
+            background-color: #8e44ad;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-btn:hover {
+            background-color: #732d91;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoContainer">
+            <div class="logo">
+                <span><a href="./">LogoTM</a></span>
+            </div>
+        </div>
+        <div class="navContainer">
+            <div class="navIcon"><i class="fa-solid fa-bars"></i></div>
+            <nav class="navbarnav">
+                <ul class="navList">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./">About</a></li>
+                    <li><a href="./">Link 3</a></li>
+                    <li><a href="./">Link 4</a></li>
+                    <li><a href="./">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <h2>Become a Part of Our Mission</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us why you want to join us..."></textarea>
+
+            <div class="btn">
+                <button type="submit" id="submit-btn">Join Now</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="section3">
+            <h3>About</h3>
+            <div>
+                Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Eum similique dolorem <br>at minima! Dolore unde iure, eos ullam cum maxime?
+            </div>
+        </div>
+        
+        <div class="section2">
+           
+            <ul class="navList">
+                <li><a href="./">Facebook</a></li>
+                <li><a href="./">Instagram</a></li>
+                <li><a href="./">Twitter</a></li>
+                <li><a href="./">WhatsApp</a></li>
+                <li><a href="./">Telegram</a></li>
+            </ul>
+        </div>
+        
+        <div class="section1">
+            <ul class="navList">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./event.html">Events</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <div class="foot">
+        &copy; Copyright All Right Reserved.
+    </div>
+
+<script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+    
+</body>
+
+</html>
